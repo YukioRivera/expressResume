@@ -7,14 +7,24 @@
     <title><%= title %></title>                               <!-- THIS LINE IS KEY -->
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../logo_sm.png" type="image/x-icon">
-    <h1>HomePage</h1>
-        <nav>
+    <a href="/"><h1>ILP Website</h1></a>
+        <form action="<%= classLink %>">    
+            <select value="classSelect">
+                <option><a href="majorProseminar">Major ProSeminar</a></option>
+                <option><a href="softwareDesign">Software Design</a></option>
+                <option><a href="databaseManagement">Database Management</a></option>
+                <option><a href="operatingSystems">Operating Systems</a></option>
+                <option><a href="computerNetworking">Introduction to Computer Networking</a></option>
+                <option><a href="internetProgramming">Internet Programming</a></option>
+            </select>
+        </form>
+        <!-- <nav>
             <a href="softwareDesign">Software Design</a>
             <a href="databaseManagement">Database Management</a>
             <a href="operatingSystems">Operating Systems</a>
             <a href="computerNetworking">Introduction to Computer Networking</a>
             <a href="internetProgramming">Internet Programming</a>
-        </nav>
+        </nav> -->
 </head>
 <body>
 

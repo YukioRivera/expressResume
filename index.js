@@ -27,33 +27,37 @@ app.listen(3000, () => {
 
 // Routes 
 app.get("/", function(req, res) {
-    res.locals.title = "Yukio's Home Page";                    // THIS LINE IS KEY
-    res.render("index.ejs");
+    // res.locals.title = "Yukio's Home Page";                    
+    res.render("index.ejs", {title: 'Homepage'}); // THIS LINE IS KEY
 });
 
+app.get("/majorProseminar", function(req, res) {
+    res.render("majorProseminar", {title: 'CST300: Major ProSeminar'})
+})
+
 app.get("/softwareDesign", function(req, res) {
-    res.locals.title = "CST 338: Software Design";
-    res.render("softwareDesign");
+    // res.locals.title = "CST 338: Software Design";
+    res.render("softwareDesign", {title: 'CST338: Software Design'});
 });
 
 app.get("/databaseManagement", function(req, res) {
-    res.locals.title = "CST 363: Database Management";
-    res.render("databaseManagement");
+    // res.locals.title = "CST 363: Database Management";
+    res.render("databaseManagement", {title: 'CST363: Database Management'});
 });
 
 app.get("/operatingSystems", function(req, res) {
-    res.locals.title = "CST 334: Operating Systems";
-    res.render("operatingSystems");
+    // res.locals.title = "CST 334: Operating Systems";
+    res.render("operatingSystems", {title: 'CST334: Operating Systems'});
 });
 
 app.get("/computerNetworking", function(req, res) {
-    res.locals.title = "CST 311: Introduction to Computer Networking";
-    res.render("computerNetworking");
+    // res.locals.title = "CST 311: Introduction to Computer Networking";
+    res.render("computerNetworking", {title: 'CST311: Introduction to Computer Networking'});
 });
 
 app.get("/internetProgramming", function(req, res) {
-    res.locals.title = "CST 336: Internet Programming";
-    res.render("internetProgramming");
+    // res.locals.title = "CST 336: Internet Programming";
+    res.render("internetProgramming", {title: 'CST336: Internet Programming'});
 });
 
 // Classes For website:
