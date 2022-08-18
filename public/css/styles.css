@@ -1,0 +1,30 @@
+/* Class tags */
+.headerContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.classSelect {
+   display: flexbox;
+   margin: auto 0;
+   
+}
+
+/* Regular Tags */
+select {
+   width: 150px;
+   margin: 10px;
+}
+select:focus {
+   min-width: 150px;
+   width: auto;
+}
+
+footer {
+   /* display: flex;
+   justify-content: center; */
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}

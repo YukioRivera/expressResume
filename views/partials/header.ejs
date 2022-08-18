@@ -5,26 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%= title %></title>                               <!-- THIS LINE IS KEY -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="shortcut icon" href="../logo_sm.png" type="image/x-icon">
-    <a href="/"><h1>ILP Website</h1></a>
-        <form action="<%= classLink %>">    
-            <select value="classSelect">
-                <option><a href="majorProseminar">Major ProSeminar</a></option>
-                <option><a href="softwareDesign">Software Design</a></option>
-                <option><a href="databaseManagement">Database Management</a></option>
-                <option><a href="operatingSystems">Operating Systems</a></option>
-                <option><a href="computerNetworking">Introduction to Computer Networking</a></option>
-                <option><a href="internetProgramming">Internet Programming</a></option>
-            </select>
-        </form>
-        <!-- <nav>
-            <a href="softwareDesign">Software Design</a>
-            <a href="databaseManagement">Database Management</a>
-            <a href="operatingSystems">Operating Systems</a>
-            <a href="computerNetworking">Introduction to Computer Networking</a>
-            <a href="internetProgramming">Internet Programming</a>
-        </nav> -->
+    
+    <div class="headerContainer">
+        <a href="/"><h1>Yukio's CSUMB <br> ILP Portfolio</h1></a>
+        
+        <!-- When adding a new class create a new option -->
+        <select class="classSelect" name="classSelect" value="classSelect" onchange="window.location.href=this.value" style="max-width:90%;">
+            <option >Select One</option>
+            <option value="/"><a href="/">Homepage</a></option>
+            <option value="majorProseminar"><a href="majorProseminar">Major ProSeminar</a></option>
+            <option value="softwareDesign"><a href="softwareDesign">Software Design</a></option>
+            <option value="databaseManagement"><a href="databaseManagement">Database Management</a></option>
+            <option value="operatingSystems"><a href="operatingSystems">Operating Systems</a></option>
+            <option value="computerNetworking"><a href="computerNetworking">Introduction to Computer Networking</a></option>
+            <option value="internetProgramming"><a href="internetProgramming">Internet Programming</a></option>
+        </select>
+    </div>
 </head>
 <body>
 
