@@ -4,6 +4,10 @@ const mysql = require("mysql");
 const app = express();
 const pool = require('./dbPool');
 
+// Router for Video
+const router = express.Router();
+
+// Express
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
@@ -36,7 +40,7 @@ app.get("/", function(req, res) {
 app.get("/majorProseminar", function(req, res) {
     let headerTitle = "CST300: Major ProSeminar";
     res.render("majorProseminar", {title: 'CST300: Major ProSeminar', 'headerTitle': headerTitle})
-})
+});
 
 app.get("/softwareDesign", function(req, res) {
     // res.locals.title = "CST 338: Software Design";
