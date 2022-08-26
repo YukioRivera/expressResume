@@ -44,6 +44,11 @@
    padding-bottom: 30px;
 }
 
+div#code.pdfView {
+   padding-right: 50px;
+   padding-left: 50px;
+}
+
 .videoView {
    /* TODO: */
 }
